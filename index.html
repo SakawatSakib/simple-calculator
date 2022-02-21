@@ -14,48 +14,56 @@
         
 
             <div class="calcu-head">
-                <input  type="text" id="calcu-result" maxlength="16">
+                <input type="text" id="calcu-result" maxlength="16">
                 
             </div>
             
            
             <div class="calcu-body">
                       <div  >
-                          <input class="btn"  type="button" value="C">
+                          <input class="btn"  type="button" value="C" onclick="">
                           <input class="btn " type="button" value="+/-">
                           <input class="btn"type="button" value="%">
                           <input class="btn " style="background-color: #782594;"type="button" value="/">
 
                       </div>
                       <div  >
-                        <input class="btn" type="button" value="7">
-                        <input class="btn"type="button" value="8">
-                        <input class="btn"type="button" value="9">
-                        <input class="btn"style="background-color: #782594;"type="button" value="x">
+                        <input class="btn" type="button" value="7"onclick="insertNumber(7)">
+                        <input class="btn" type="button" value="8"onclick="insertNumber(8)">
+                        <input class="btn" type="button" value="9" onclick="insertNumber(9)">
+                        <input class="btn"style="background-color: #782594;"type="button" value="x" onclick="">
 
                     </div>
                     <div  >
-                        <input class="btn "type="button" value="4">
-                        <input class="btn "type="button" value="5">
-                        <input class="btn " type="button" value="6">
-                        <input class="btn"style="background-color: #782594;"type="button" value="-">
+                        <input class="btn "type="button" value="4" onclick="insertNumber(4)">
+                         <input class="btn "type="button" value="5"onclick="insertNumber(5)">
+                        <input class="btn " type="button" value="6"onclick="insertNumber(6)">
+                        <input class="btn"style="background-color: #782594;"type="button" value="-"onclick="">
 
                     </div>
                     <div  >
-                        <input class="btn"type="button" value="1">
-                        <input class="btn " type="button" value="2">
-                        <input class="btn " type="button" value="3">
-                        <input class="btn"style="background-color: #782594;" type="button" value="+">
+                        <input class="btn"type="button" value="1"onclick="insertNumber(1)">
+                        <input class="btn" type="button" value="2"onclick="insertNumber(2)">
+                        <input class="btn" type="button" value="3"onclick="insertNumber(3)">
+                        <input class="btn"style="background-color: #782594;" type="button" value="+"onclick="">
 
                     </div>
                     <div  >
-                        <input class="btn "type="button" value="0">
-                        <input class="btn "type="button" value=".">
-                        <input class="btn"style="background-color: red;"type="button" value="DEL">
-                        <input class="btn"style="background-color: #32CD32;"type="button" value="=">
+                        <input class="btn "type="button" value="0"onclick="insertNumber(0)">
+                        <input class="btn "type="button" value="."onclick="insertNumber('.')">
+                        <input class="btn"style="background-color: red;"type="button" value="DEL"onclick="">
+                        <input class="btn"style="background-color: #32CD32;"type="button" value="="onclick="">
 
                     </div>
             </div>
     </div>
+    <script>
+             function insertNumber(number){
+               let currentNumbers = document.getElementById('calcu-result').value=number;
+              
+              
+               
+             }
+    </script>
 </body>
 </html>
